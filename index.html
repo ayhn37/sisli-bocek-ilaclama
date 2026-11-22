@@ -21,11 +21,11 @@
         
         /* HEADER */
         header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
         
         /* LOGO KISMI GÜNCELLENDİ */
         .logo { font-size: 24px; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px; }
-        .logo img { height: 35px; width: auto; display: block; } /* Logonun boyutu burada ayarlanıyor */
+        .logo img { height: 45px; width: 45px; object-fit: contain; border-radius: 50%; } /* 192x192 logoyu 45px boyutuna sığdırır ve net gösterir */
         .logo span { color: var(--dark); }
         
         nav { display: flex; gap: 25px; align-items: center; }
@@ -134,6 +134,8 @@
             nav { display: none; } 
             .calc-container { padding: 30px 20px; } 
             .hero { padding: 80px 20px; min-height: 400px; }
+            .logo img { height: 35px; width: 35px; } /* Mobilde logo boyutu biraz daha küçültüldü */
+            .logo { font-size: 20px; } /* Mobilde yazı boyutu biraz küçültüldü */
         }
     </style>
 </head>
@@ -141,9 +143,9 @@
 
     <header>
         <div class="nav-container">
-            <!-- EMOJİ KALDIRILDI, YERİNE FAVICON LOGOSU EKLENDİ -->
+            <!-- GÜNCELLENDİ: 192x192 yüksek çözünürlüklü logo eklendi -->
             <a href="#" class="logo">
-                <img src="favicon-32x32.png" alt="Şişli Böcek İlaçlama Logo"> 
+                <img src="android-chrome-192x192.png" alt="Şişli Böcek İlaçlama Logo"> 
                 Şişli <span>Böcek İlaçlama</span>
             </a>
             
