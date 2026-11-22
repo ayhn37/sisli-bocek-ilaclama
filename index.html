@@ -21,12 +21,11 @@
         
         /* HEADER */
         header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-        /* Logo büyüdüğü için padding değerlerini biraz kıstık ki header çok kalın olmasın */
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 5px 20px; display: flex; justify-content: space-between; align-items: center; }
         
-        /* BÜYÜTÜLEN LOGO KISMI */
+        /* 140PX YAPILAN LOGO KISMI */
         .logo { display: flex; align-items: center; }
-        .logo img { height: 80px; width: auto; display: block; } /* Logo boyutu 80px yapıldı */
+        .logo img { height: 140px; width: auto; display: block; } /* Logo boyutu 140px yapıldı */
         
         nav { display: flex; gap: 25px; align-items: center; }
         nav a { font-weight: 500; color: var(--dark); transition: 0.3s; }
@@ -135,7 +134,7 @@
             nav { display: none; } 
             .calc-container { padding: 30px 20px; } 
             .hero { padding: 80px 20px; min-height: 400px; }
-            .logo img { height: 60px; } /* Mobilde logo boyutu 60px yapıldı */
+            .logo img { height: 90px; } /* Mobilde ekranı kaplamaması için 90px'e düşürüldü */
         }
     </style>
 </head>
@@ -143,7 +142,7 @@
 
     <header>
         <div class="nav-container">
-            <!-- BÜYÜTÜLMÜŞ LOGO -->
+            <!-- 140PX BÜYÜTÜLMÜŞ LOGO -->
             <a href="#" class="logo">
                 <img src="logo.jpg" alt="Şişli Böcek İlaçlama Logo"> 
             </a>
