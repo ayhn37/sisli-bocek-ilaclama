@@ -23,37 +23,9 @@
         
         /* HERO */
         .hero { 
-            position: relative;
-            color: #fff; 
-            padding: 120px 20px; 
-            text-align: center; 
-            overflow: hidden;
-            background-color: var(--primary-dark); /* Resim yüklenene kadar yeşil arka plan */
-        }
-        /* Resmi arka plana yerleştiren yeni yapı */
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 0;
-            /* Yeşil karartma efekti */
-            opacity: 0.85; 
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(7, 92, 42, 0.8); /* Koyu yeşil katman */
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2; /* Yazıların resmin üstünde kalmasını sağlar */
+            /* Arka plan resmi ve üzerindeki yeşil karartma (overlay) - Dosya adı iladlama.jpg olarak güncellendi */
+            background: linear-gradient(rgba(10, 125, 59, 0.75), rgba(7, 92, 42, 0.85)), url('iladlama.jpg') center/cover no-repeat; 
+            color: #fff; padding: 120px 20px; text-align: center; 
         }
         .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; font-weight: 700; }
         .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
@@ -110,11 +82,7 @@
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 2.2rem; } 
-            nav { display: none; } 
-            .calc-container { padding: 30px 20px; } 
-        }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } nav { display: none; } .calc-container { padding: 30px 20px; } }
     </style>
 </head>
 <body>
@@ -132,17 +100,11 @@
     </header>
 
     <section class="hero">
-        <!-- Resim burada img etiketiyle çağrılıyor ve mobil uyumlu hale getiriliyor -->
-        <img src="iladlama.jpg?v=1" alt="Şişli Böcek İlaçlama" class="hero-bg">
-        <div class="hero-overlay"></div>
-        
-        <div class="hero-content">
-            <h1>Şişli'nin En Güvenilir<br>Böcek İlaçlama Hizmeti</h1>
-            <p>Fulya, Mecidiyeköy, Nişantaşı ve tüm Şişli mahallelerinde ev ve iş yerleriniz için garantili, kokusuz ve Sağlık Bakanlığı onaylı çözümler.</p>
-            <div class="btn-group">
-                <a href="#fiyat-hesapla" class="btn btn-primary">💰 Anında Fiyat Hesapla</a>
-                <a href="tel:08504660022" class="btn btn-wa">📞 Hemen Ara</a>
-            </div>
+        <h1>Şişli'nin En Güvenilir<br>Böcek İlaçlama Hizmeti</h1>
+        <p>Fulya, Mecidiyeköy, Nişantaşı ve tüm Şişli mahallelerinde ev ve iş yerleriniz için garantili, kokusuz ve Sağlık Bakanlığı onaylı çözümler.</p>
+        <div class="btn-group">
+            <a href="#fiyat-hesapla" class="btn btn-primary">💰 Anında Fiyat Hesapla</a>
+            <a href="tel:08504660022" class="btn btn-wa">📞 Hemen Ara</a>
         </div>
     </section>
 
