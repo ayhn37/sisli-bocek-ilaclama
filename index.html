@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şişli Böcek İlaçlama | Ev ve İşyeri Profesyonel Çözümler</title>
+    
+    <!-- SEO & GEO UYUMLU BAŞLIK VE AÇIKLAMA -->
+    <title>Şişli Böcek İlaçlama | Garantili ve Kokusuz Haşere Kontrolü</title>
+    <meta name="description" content="Şişli böcek ilaçlama hizmeti. Fulya, Mecidiyeköy, Nişantaşı ve tüm Şişli'de ev, iş yeri ve apartmanlar için Sağlık Bakanlığı onaylı, kokusuz, garantili haşere kontrolü. Hemen fiyat hesaplayın!">
+    <meta name="keywords" content="şişli böcek ilaçlama, şişli haşere kontrolü, mecidiyeköy böcek ilaçlama, nişantaşı ilaçlama, fulya böcek ilaçlama, hamamböceği ilaçlama şişli, tahtakurusu ilaçlama, fare kontrolü şişli, dezenfeksiyon şişli">
+    <meta name="author" content="Şişli Böcek İlaçlama">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Sosyal Medya Paylaşımları İçin) -->
+    <meta property="og:title" content="Şişli Böcek İlaçlama | Profesyonel Haşere Kontrolü">
+    <meta property="og:description" content="Şişli ve çevresinde garantili, kokusuz ve Sağlık Bakanlığı onaylı böcek ilaçlama hizmeti. 7/24 randevu alın.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sitenizin-adresi.com/ilaclama.jpg"> <!-- Buraya sitenizin gerçek adresini yazın -->
     
     <!-- FAVICON KODLARI -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -12,7 +24,45 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="manifest" href="site.webmanifest">
 
+    <!-- FONTLAR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- YAPILANDIRILMIŞ VERİ (Schema.org) - Yapay Zeka ve Google Botları İçin -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Şişli Böcek İlaçlama",
+      "image": "https://sitenizin-adresi.com/ilaclama.jpg", 
+      "@id": "https://sitenizin-adresi.com",
+      "url": "https://sitenizin-adresi.com",
+      "telephone": "+908504660022",
+      "priceRange": "₺₺",
+      "description": "Şişli bölgesinde ev, iş yeri ve apartmanlar için profesyonel böcek ilaçlama, kemirgen kontrolü ve dezenfeksiyon hizmetleri.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Şişli",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.0602,
+        "longitude": 28.9877
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+
     <style>
         :root { 
             --primary: #e31e24; /* Kırmızı */
@@ -30,7 +80,7 @@
         header { background: #fdfbf7; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #eaeaea; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 0px 20px; display: flex; justify-content: space-between; align-items: center; }
         
-        /* LOGO BOYUTU 90PX'E DÜŞÜRÜLDÜ */
+        /* LOGO BOYUTU 90PX */
         .logo { display: flex; align-items: center; }
         .logo img { height: 90px; width: auto; display: block; } 
         
@@ -91,8 +141,16 @@
         .btn-wa { background: transparent; color: #fff; border: 2px solid #fff; }
         .btn-wa:hover { background: #fff; color: var(--primary-dark); transform: translateY(-3px); }
 
+        /* SEO UYUMLU H1 VE İÇERİK METNİ */
+        .seo-content { padding: 60px 20px; background: #fff; max-width: 1000px; margin: 0 auto; text-align: left; }
+        .seo-content h2 { font-size: 2rem; color: var(--primary-dark); margin-bottom: 20px; font-weight: 700; }
+        .seo-content h3 { font-size: 1.4rem; color: var(--primary-dark); margin: 25px 0 15px; font-weight: 600; }
+        .seo-content p { margin-bottom: 15px; color: #4a5568; font-size: 1rem; }
+        .seo-content ul { margin-left: 20px; margin-bottom: 20px; color: #4a5568; }
+        .seo-content li { margin-bottom: 10px; }
+
         /* SERVICES */
-        .services { padding: 100px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .services { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; background: var(--light); }
         .section-title { font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px; font-weight: 700; }
         .section-subtitle { color: var(--gray); margin-bottom: 60px; font-size: 1.1rem; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
@@ -103,14 +161,14 @@
         .service-card p { color: var(--gray); font-size: 0.95rem; }
 
         /* REGIONS */
-        .regions { background: var(--light); padding: 80px 20px; text-align: center; }
+        .regions { background: #fff; padding: 80px 20px; text-align: center; }
         .regions-grid { max-width: 1000px; margin: 40px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        .region-tag { background: #fff; color: var(--primary-dark); padding: 12px 25px; border-radius: 50px; font-weight: 500; border: 1px solid #e2e8f0; transition: 0.3s; }
+        .region-tag { background: var(--light); color: var(--primary-dark); padding: 12px 25px; border-radius: 50px; font-weight: 500; border: 1px solid #e2e8f0; transition: 0.3s; }
         .region-tag:hover { border-color: var(--primary); color: var(--primary); }
 
         /* FİYAT HESAPLAMA MODÜLÜ */
-        .calculator-section { padding: 100px 20px; background: #fff; display: flex; justify-content: center; }
-        .calc-container { background: var(--light); padding: 50px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); max-width: 600px; width: 100%; border-top: 5px solid var(--primary); }
+        .calculator-section { padding: 100px 20px; background: var(--light); display: flex; justify-content: center; }
+        .calc-container { background: #fff; padding: 50px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); max-width: 600px; width: 100%; border-top: 5px solid var(--primary); }
         .calc-container h2 { text-align: center; font-size: 2rem; margin-bottom: 10px; color: var(--primary-dark); }
         .calc-container > p { text-align: center; color: var(--gray); margin-bottom: 30px; }
         .form-group { margin-bottom: 20px; }
@@ -143,7 +201,8 @@
             nav { display: none; } 
             .calc-container { padding: 30px 20px; } 
             .hero { padding: 80px 20px; min-height: 400px; }
-            .logo img { height: 65px; } /* Mobilde header'ı daraltmak için logo küçültüldü */
+            .logo img { height: 65px; } 
+            .seo-content { padding: 40px 20px; }
         }
     </style>
 </head>
@@ -151,53 +210,72 @@
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="logo.jpg" alt="Şişli Böcek İlaçlama Logo"> 
+            <a href="#" class="logo" title="Şişli Böcek İlaçlama Ana Sayfa">
+                <img src="logo.jpg" alt="Şişli Böcek İlaçlama Firması Logosu"> 
             </a>
             
             <nav>
-                <a href="#hizmetler">Hizmetler</a>
-                <a href="#bolgeler">Hizmet Bölgeleri</a>
-                <a href="#fiyat-hesapla" style="color: var(--primary); font-weight: 700;">Fiyat Hesapla</a>
-                <a href="tel:08504660022" class="nav-tel">📞 Hemen Ara</a>
+                <a href="#hizmetler" title="Böcek İlaçlama Hizmetlerimiz">Hizmetler</a>
+                <a href="#bolgeler" title="Hizmet Verdiğimiz Şişli Mahalleleri">Hizmet Bölgeleri</a>
+                <a href="#fiyat-hesapla" style="color: var(--primary); font-weight: 700;" title="Anında İlaçlama Fiyatı Hesapla">Fiyat Hesapla</a>
+                <a href="tel:08504660022" class="nav-tel" title="Şişli Böcek İlaçlama Hemen Ara">📞 Hemen Ara</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <img src="ilaclama.jpg" alt="Böcek İlaçlama Hizmeti" class="hero-img">
+        <!-- SEO için resim alt etiketi (alt) detaylandırıldı -->
+        <img src="ilaclama.jpg" alt="Şişli böcek ilaçlama uzmanı ev ve iş yeri haşere kontrolü yapıyor" class="hero-img">
         
         <div class="hero-overlay"></div>
         
         <div class="hero-content">
-            <h1>Şişli'nin En Güvenilir<br>Böcek İlaçlama Hizmeti</h1>
-            <p>Fulya, Mecidiyeköy, Nişantaşı ve tüm Şişli mahallelerinde ev ve iş yerleriniz için garantili, kokusuz ve Sağlık Bakanlığı onaylı çözümler.</p>
+            <!-- H1 Etiketi SEO için anahtar kelimeyle güncellendi -->
+            <h1>Şişli Böcek İlaçlama:<br>Garantili ve Kokusuz Profesyonel Çözümler</h1>
+            <p>Fulya, Mecidiyeköy, Nişantaşı ve tüm Şişli mahallelerinde ev, iş yeri ve apartmanlarınız için Sağlık Bakanlığı onaylı, çocuk ve evcil hayvan dostu haşere kontrol hizmeti.</p>
             <div class="btn-group">
-                <a href="#fiyat-hesapla" class="btn btn-primary">💰 Anında Fiyat Hesapla</a>
-                <a href="tel:08504660022" class="btn btn-wa">📞 Hemen Ara</a>
+                <a href="#fiyat-hesapla" class="btn btn-primary" title="Metrekareye Göre Fiyat Hesapla">💰 Anında Fiyat Hesapla</a>
+                <a href="tel:08504660022" class="btn btn-wa" title="Bizi Arayın">📞 Hemen Ara</a>
             </div>
         </div>
     </section>
 
+    <!-- YENİ EKLENEN SEO METNİ (GEO İÇİN DE UYGUNDUR) -->
+    <section class="seo-content">
+        <h2>Şişli'nin En Güvenilir Haşere Kontrol ve İlaçlama Firması</h2>
+        <p>Şişli bölgesinde yaşam alanlarınızı tehdit eden hamamböceği, karınca, tahtakurusu, örümcek ve fare gibi zararlılara karşı <strong>7/24 profesyonel böcek ilaçlama</strong> hizmeti sunuyoruz. Yaşam alanlarınızın hijyenini ve sağlığını korumak için, dünya standartlarında ve <strong>Sağlık Bakanlığı onaylı</strong> biyosidal ürünler kullanıyoruz.</p>
+        
+        <h3>Neden Şişli Böcek İlaçlama'yı Seçmelisiniz?</h3>
+        <ul>
+            <li><strong>Garantili Hizmet:</strong> Uyguladığımız ilaçlama sonrasında memnun kalmazsanız, tekrar uygulama garantisi veriyoruz.</li>
+            <li><strong>Kokusuz ve Sağlıklı:</strong> Kullandığımız jel ve sıvı ilaçlar kokusuz olup, çocuklar ve evcil hayvanlar için güvenlidir.</li>
+            <li><strong>Uzman Ekip:</strong> Alanında eğitimli ve sertifikalı teknisyenlerimizle en zorlu haşere sorunlarını bile kısa sürede çözüyoruz.</li>
+            <li><strong>Gizlilik:</strong> Ev ve iş yerlerinizde yapılan tüm işlemler tamamen gizlilik içinde yürütülür.</li>
+        </ul>
+
+        <h3>Hizmet Verdiğimiz Başlıca Mahalleler</h3>
+        <p>Fulya, Mecidiyeköy, Nişantaşı, Teşvikiye, Gülbağ, Esentepe, Feriköy, Bomonti, Halaskargazi, Harbiye, Cumhuriyet ve Şişli'nin tüm mahallelerinde <strong>ev ilaçlama, apartman ilaçlama ve iş yeri ilaçlama</strong> hizmetlerimizle yanınızdayız. Şişli'nin merkezi konumunda olmamız sayesinde ekiplerimiz adresinize en kısa sürede ulaşır.</p>
+    </section>
+
     <section class="services" id="hizmetler">
-        <h2 class="section-title">Hizmetlerimiz</h2>
+        <h2 class="section-title">Böcek ve Haşere İlaçlama Hizmetlerimiz</h2>
         <p class="section-subtitle">Şişli ve çevre semtlerde eviniz veya iş yeriniz için her türlü böcek problemine profesyonel müdahale.</p>
         
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">🏠</div>
-                <h3>Ev İlaçlama</h3>
+                <h3>Ev ve Daire İlaçlama</h3>
                 <p>Evinizde gördüğünüz hamamböceği, karınca, örümcek veya diğer böceklere karşı, çocuk ve evcil hayvan sağlığına uygun, kokusuz ve garantili çözüm.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🏢</div>
-                <h3>İşyeri İlaçlama</h3>
+                <h3>İşyeri ve Ofis İlaçlama</h3>
                 <p>Ofis, mağaza, restoran, kafe ve depolarınızda müşterilerinizi rahatsız etmeyecek şekilde, mesai saatleri dışında yapılan profesyonel ilaçlama.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🪳</div>
-                <h3>Böcek İlaçlama</h3>
-                <p>Hamamböceği, gümüşçün, örümcek, karınca gibi ev ve iş yerlerinize musallat olan tüm böceklere karşı kalıcı ve garantili çözüm.</p>
+                <h3>Hamamböceği İlaçlama</h3>
+                <p>Hamamböceği, gümüşçün, örümcek, karınca gibi ev ve iş yerlerinize musallat olan tüm böceklere karşı kalıcı ve garantili jel uygulaması.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">🐭</div>
@@ -211,14 +289,14 @@
             </div>
             <div class="service-card">
                 <div class="service-icon">🧴</div>
-                <h3>Dezenfeksiyon</h3>
+                <h3>Dezenfeksiyon Hizmeti</h3>
                 <p>Virüs ve bakterilere karşı okul, ofis, restoran ve evlerde profesyonel ULV dezenfeksiyon hizmeti.</p>
             </div>
         </div>
     </section>
 
     <section class="regions" id="bolgeler">
-        <h2 class="section-title">Hizmet Verdiğimiz Mahalleler</h2>
+        <h2 class="section-title">Şişli ve Çevresinde Hizmet Bölgelerimiz</h2>
         <div class="regions-grid">
             <div class="region-tag">Fulya Böcek İlaçlama</div>
             <div class="region-tag">Mecidiyeköy Böcek İlaçlama</div>
@@ -228,16 +306,18 @@
             <div class="region-tag">Esentepe Böcek İlaçlama</div>
             <div class="region-tag">Feriköy Böcek İlaçlama</div>
             <div class="region-tag">Bomonti Böcek İlaçlama</div>
+            <div class="region-tag">Halaskargazi Böcek İlaçlama</div>
+            <div class="region-tag">Harbiye Böcek İlaçlama</div>
         </div>
     </section>
 
     <section class="calculator-section" id="fiyat-hesapla">
         <div class="calc-container">
-            <h2>Anında Fiyat Hesapla</h2>
+            <h2>Anında İlaçlama Fiyatı Hesapla</h2>
             <p>İlaçlanacak alanın metrekaresini girin, size en uygun paket fiyatını hemen görün.</p>
             
             <div class="form-group">
-                <label>İlaçlanacak Alan (Metrekare - m²)</label>
+                <label for="metrekare">İlaçlanacak Alan (Metrekare - m²)</label>
                 <input type="number" id="metrekare" placeholder="Örn: 120" min="1">
             </div>
 
@@ -249,7 +329,7 @@
                 <div class="kdv">+ KDV</div>
                 <p>*Fiyatlarımız 2026 yılı güncel tarifemize göre olup, kesin fiyat için lütfen bizimle iletişime geçin.</p>
                 
-                <a href="#" id="waRandevuBtn" class="btn-result-wa" target="_blank" rel="noopener">
+                <a href="#" id="waRandevuBtn" class="btn-result-wa" target="_blank" rel="noopener" title="WhatsApp üzerinden randevu al">
                     💬 Bu Fiyat İçin Bilgi ve Randevu Al
                 </a>
             </div>
@@ -258,10 +338,11 @@
 
     <footer>
         <p>&copy; 2026 Şişli Böcek İlaçlama. Tüm hakları saklıdır.</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">Sağlık Bakanlığı Ruhsatlı İlaçlama Firması</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #888;">T.C. Sağlık Bakanlığı Ruhsatlı Haşere Kontrol ve İlaçlama Firması</p>
     </footer>
 
-    <a href="https://wa.me/908504660022" class="float-wa" target="_blank" rel="noopener">💬</a>
+    <!-- Mobil ve Masaüstü Sabit WhatsApp Butonu -->
+    <a href="https://wa.me/908504660022" class="float-wa" target="_blank" rel="noopener" title="WhatsApp İletişim">💬</a>
 
     <script>
         function fiyatHesapla() {
