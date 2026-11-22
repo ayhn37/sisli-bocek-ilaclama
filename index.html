@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şişli Böcek İlaçlama | Ev ve İşyeri Profesyonel Çözümler</title>
     
-    <!-- FAVICON KODLARI (GitHub'a yüklediğiniz dosyalara göre) -->
+    <!-- FAVICON KODLARI -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="manifest" href="site.webmanifest">
-    <!-- FAVICON KODLARI BİTİŞ -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -23,8 +22,12 @@
         /* HEADER */
         header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
         .nav-container { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        
+        /* LOGO KISMI GÜNCELLENDİ */
         .logo { font-size: 24px; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px; }
+        .logo img { height: 35px; width: auto; display: block; } /* Logonun boyutu burada ayarlanıyor */
         .logo span { color: var(--dark); }
+        
         nav { display: flex; gap: 25px; align-items: center; }
         nav a { font-weight: 500; color: var(--dark); transition: 0.3s; }
         nav a:hover { color: var(--primary); }
@@ -138,7 +141,12 @@
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">🐞 Şişli <span>Böcek İlaçlama</span></a>
+            <!-- EMOJİ KALDIRILDI, YERİNE FAVICON LOGOSU EKLENDİ -->
+            <a href="#" class="logo">
+                <img src="favicon-32x32.png" alt="Şişli Böcek İlaçlama Logo"> 
+                Şişli <span>Böcek İlaçlama</span>
+            </a>
+            
             <nav>
                 <a href="#hizmetler">Hizmetler</a>
                 <a href="#bolgeler">Hizmet Bölgeleri</a>
