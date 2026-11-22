@@ -22,7 +22,11 @@
         .nav-tel { background: var(--primary); color: #fff !important; padding: 10px 20px; border-radius: 50px; font-weight: 600; }
         
         /* HERO */
-        .hero { background: linear-gradient(rgba(10, 125, 59, 0.85), rgba(7, 92, 42, 0.9)), url('https://images.unsplash.com/photo-1584820927498-cafe4ec9e2d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: #fff; padding: 120px 20px; text-align: center; }
+        .hero { 
+            /* Arka plan resmi ve üzerindeki yeşil karartma (overlay) */
+            background: linear-gradient(rgba(10, 125, 59, 0.75), rgba(7, 92, 42, 0.85)), url('img/ilaclama.jpg') center/cover no-repeat; 
+            color: #fff; padding: 120px 20px; text-align: center; 
+        }
         .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; font-weight: 700; }
         .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
         .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
@@ -174,7 +178,6 @@
                 <div class="kdv">+ KDV</div>
                 <p>*Fiyatlarımız 2026 yılı güncel tarifemize göre olup, kesin fiyat için lütfen bizimle iletişime geçin.</p>
                 
-                <!-- Bu buton JavaScript ile WhatsApp'a yönlenecek -->
                 <a href="#" id="waRandevuBtn" class="btn-result-wa" target="_blank" rel="noopener">
                     💬 Bu Fiyat İçin Bilgi ve Randevu Al
                 </a>
@@ -189,65 +192,43 @@
 
     <a href="https://wa.me/908504660022" class="float-wa" target="_blank" rel="noopener">💬</a>
 
-    <!-- JAVASCRIPT: FİYAT HESAPLAMA VE WHATSAPP YÖNLENDİRME -->
     <script>
         function fiyatHesapla() {
             var metrekare = parseInt(document.getElementById("metrekare").value);
             var fiyat = 0;
-            var fiyatStr = "";
 
             if (isNaN(metrekare) || metrekare <= 0) {
                 alert("Lütfen geçerli bir metrekare (m²) değeri girin.");
                 return;
             }
 
-            // Fiyat Tablosu Mantığı (2026 Tarifesi)
-            if (metrekare <= 100) {
-                fiyat = 2500;
-            } else if (metrekare <= 130) {
-                fiyat = 2750;
-            } else if (metrekare <= 160) {
-                fiyat = 3000;
-            } else if (metrekare <= 190) {
-                fiyat = 3250;
-            } else if (metrekare <= 220) {
-                fiyat = 3500;
-            } else if (metrekare <= 250) {
-                fiyat = 3750;
-            } else if (metrekare <= 280) {
-                fiyat = 4000;
-            } else if (metrekare <= 310) {
-                fiyat = 4250;
-            } else if (metrekare <= 340) {
-                fiyat = 4500;
-            } else if (metrekare <= 370) {
-                fiyat = 4750;
-            } else if (metrekare <= 400) {
-                fiyat = 5000;
-            } else {
-                // 400 m² üzeri için özel mesaj
+            if (metrekare <= 100) { fiyat = 2500; } 
+            else if (metrekare <= 130) { fiyat = 2750; } 
+            else if (metrekare <= 160) { fiyat = 3000; } 
+            else if (metrekare <= 190) { fiyat = 3250; } 
+            else if (metrekare <= 220) { fiyat = 3500; } 
+            else if (metrekare <= 250) { fiyat = 3750; } 
+            else if (metrekare <= 280) { fiyat = 4000; } 
+            else if (metrekare <= 310) { fiyat = 4250; } 
+            else if (metrekare <= 340) { fiyat = 4500; } 
+            else if (metrekare <= 370) { fiyat = 4750; } 
+            else if (metrekare <= 400) { fiyat = 5000; } 
+            else {
                 document.getElementById("fiyatSonuc").innerText = "Özel Fiyat";
                 document.getElementById("sonucKutusu").querySelector('.kdv').innerText = "400 m² üzeri için lütfen arayınız.";
                 document.getElementById("sonucKutusu").style.display = "block";
-                
-                // WhatsApp butonunu 400m2 üzeri için ayarla
                 var waLinkOzel = "https://wa.me/908504660022?text=" + encodeURIComponent("Merhaba, " + metrekare + " m² alan için fiyat teklifi almak istiyorum. (400 m² üzeri)");
                 document.getElementById("waRandevuBtn").href = waLinkOzel;
                 return;
             }
 
             var formatliFiyat = fiyat.toLocaleString('tr-TR') + " TL";
-
             document.getElementById("fiyatSonuc").innerText = formatliFiyat;
             document.getElementById("sonucKutusu").querySelector('.kdv').innerText = "+ KDV";
             document.getElementById("sonucKutusu").style.display = "block";
 
-            // WHATSAPP LİNKİNİ DİNAMİK OLARAK OLUŞTUR
-            // Mesaj: "Merhaba, 120 m² alan için 2.500 TL + KDV fiyat aldım. Randevu almak istiyorum."
             var mesaj = "Merhaba, " + metrekare + " m² alan için " + formatliFiyat + " + KDV fiyat aldım. Bilgi ve randevu almak istiyorum.";
             var waLink = "https://wa.me/908504660022?text=" + encodeURIComponent(mesaj);
-            
-            // Butonun linkini güncelle
             document.getElementById("waRandevuBtn").href = waLink;
         }
     </script>
