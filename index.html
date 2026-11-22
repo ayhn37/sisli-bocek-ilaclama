@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şişli Böcek İlaçlama | Ev ve İşyeri Profesyonel Çözümler</title>
+    
+    <!-- FAVICON KODLARI (GitHub'a yüklediğiniz dosyalara göre) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- FAVICON KODLARI BİTİŞ -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #0a7d3b; --primary-dark: #075c2a; --dark: #1a202c; --light: #f7fafc; --gray: #718096; }
@@ -35,29 +44,26 @@
             min-height: 500px;
         }
         
-        /* Resmi tam arkaya yayan kod */
         .hero-img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Resmin bozulmadan alanı kaplamasını sağlar */
+            object-fit: cover; 
             z-index: 0;
         }
         
-        /* Resmin üzerindeki yeşil karartma (Okunabilirlik için) */
         .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 125, 59, 0.75); /* Yeşil renk tonu */
+            background: rgba(10, 125, 59, 0.75); 
             z-index: 1;
         }
         
-        /* Yazıların ve butonların resmin üstünde durması için */
         .hero-content {
             position: relative;
             z-index: 2;
@@ -142,9 +148,7 @@
         </div>
     </header>
 
-    <!-- SLAYDER / RESİM ALANI BURADA -->
     <section class="hero">
-        <!-- Resim dosyası direkt buraya eklendi. Mobilde kesin çalışır. -->
         <img src="ilaclama.jpg" alt="Böcek İlaçlama Hizmeti" class="hero-img">
         
         <div class="hero-overlay"></div>
